@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StoryMap</string>
+    <string name="submit">Submit a Story</string>
+    <string name="read">Read a story</string>
+</resources>
