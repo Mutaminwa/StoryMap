@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         /** Called when the user taps the read story button */
         if (v == readbtn) {
-            Intent home_intent = new Intent(getApplicationContext(), RatingsListActivity.class)
+            Intent home_intent = new Intent(getApplicationContext(), MapActivity.class)
                     .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(home_intent);
         }
         /** Called when the user taps the submit story button */
         if (v == submitbtn) {
-            Intent home_intent = new Intent(getApplicationContext(), RatingsListActivity.class)
+            Intent home_intent = new Intent(getApplicationContext(), SubmitActivity.class)
                     .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(home_intent);
         }
