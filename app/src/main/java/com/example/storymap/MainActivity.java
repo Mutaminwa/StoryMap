@@ -19,24 +19,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        submitbtn = (Button) findViewById(R.id.submitbtn);
-        readbtn = (Button) findViewById(R.id.readbtn);
+        submitbtn = findViewById(R.id.submitbtn);
+        readbtn = findViewById(R.id.readbtn);
         submitbtn.setOnClickListener(this);
         readbtn.setOnClickListener(this);
     }
 
     public void onClick(View v) {
-        /** Called when the user taps the read story button */
+        /* Called when the user taps the read story button */
         if (v == readbtn) {
-            Intent home_intent = new Intent(getApplicationContext(), MapActivity.class)
+            Intent read_intent = new Intent(getApplicationContext(), MapActivity.class)
                     .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(home_intent);
+            startActivity(read_intent);
         }
-        /** Called when the user taps the submit story button */
+        /* Called when the user taps the submit story button */
         if (v == submitbtn) {
-            Intent home_intent = new Intent(getApplicationContext(), SubmitActivity.class)
+            Intent submit_intent = new Intent(getApplicationContext(), SubmitActivity.class)
                     .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(home_intent);
+            startActivity(submit_intent);
         }
     }
 
